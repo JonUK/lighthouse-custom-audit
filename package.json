@@ -4,8 +4,8 @@
   "description": "An example of a Lighthouse custom audit that checks DOM elements",
   "private": true,
   "scripts": {
-    "serve": "http-server ./test-site --port 8080 -o",
-    "lighthouse": "lighthouse --config-path=config.js http://localhost:8080/ --output-path ./results.html --view"
+    "serve": "http-server ./test-site --port 8085 -o",
+    "lighthouse": "lighthouse --config-path=config.js http://localhost:8085/ --output-path ./results.html --view"
   },
   "devDependencies": {
     "http-server": "^13.0.1",

@@ -32,8 +32,8 @@ class NonInteractiveClickHandlersGatherer extends Gatherer {
       const failingElements = elements
         .filter(element => hasEventListener(element, 'click'))
         .filter(element => {
-          // Assume that any keyboard related handlers are covering web accessibility
-          // for keyboard users (this could be a false negative).
+          // Assume that any keyboard related handlers are covering web
+          // accessibility for keyboard users (this could be a false negative).
           const hasKeyHandler =
             hasEventListener(element, 'keydown') ||
             hasEventListener(element, 'keyup') ||
@@ -44,7 +44,9 @@ class NonInteractiveClickHandlersGatherer extends Gatherer {
           // means the element receives focus in the DOM order.
           const hasValidTabIndex = element.tabIndex === 0;
 
-          return !hasKeyHandler || !hasValidTabIndex;
+          const hasRoleAttribute = element.getAttribute('role');
+
+          return !hasKeyHandler || !hasValidTabIndex || !hasRoleAttribute;
         });
 
       const elementSummaries = failingElements.map(element => ({
