@@ -1,0 +1,14 @@
+{
+  "name": "lighthouse-custom-audits",
+  "version": "1.0.0",
+  "description": "An example of a Lighthouse custom audit that checks DOM elements",
+  "private": true,
+  "scripts": {
+    "serve": "http-server ./test-site --port 8080 -o",
+    "lighthouse": "lighthouse --config-path=config.js http://localhost:8080/ --output-path ./results.html --view"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.1",
+    "lighthouse": "^8.3.0"
+  }
+}
