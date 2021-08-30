@@ -9,11 +9,12 @@ class NonInteractiveClickHandlersAudit extends Audit {
     return {
       id: 'non-interactive-click-handlers',
       title: 'Checks that click handlers on non-interactive elements are fully accessible',
-      failureTitle: 'One or more non-interactive elements has a click which is not fully accessible',
+      failureTitle: 'One or more non-interactive elements has a click handler which is not fully accessible',
       description:
         `When click handlers are added to non-interactive elements like div and span, keyboard handling
          should be used to ensure the element is operable via the keyboard and the tabindex attribute
-         used so the element can receive focus. The element should also be given a role.`,
+         used so the element can receive focus. The element should also be given a role to assist
+         screen reader users.`,
 
       // The name of the built-in or custom gatherer class that provides data to this audit
       requiredArtifacts: ['NonInteractiveClickHandlersGatherer'],
