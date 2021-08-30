@@ -21,7 +21,7 @@ module.exports = {
   categories: {
     custom: {
       title: 'Custom',
-      description: 'Custom audit for our checks on DOM element issues',
+      description: 'Custom audit for our checks on DOM element related issues',
       auditRefs: [
         // "weight" controls how multiple audits are averaged together
         { id: 'non-interactive-click-handlers', weight: 1 }

@@ -52,7 +52,7 @@ class NonInteractiveClickHandlersAudit extends Audit {
     ];
 
     const score = Audit.computeLogNormalScore(
-      {p10: context.options.p10, median: context.options.median},
+      { p10: context.options.p10, median: context.options.median },
       results.length
     );
 
