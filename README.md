@@ -11,7 +11,7 @@ Run the static server for the test HTML page
 npm run serve
 ```
 
-Run the custom audit aginst the test HTML page
+Run the custom audit against the test HTML page
 ```bash
 npm run lighthouse
 ```
@@ -19,5 +19,7 @@ npm run lighthouse
 ---
 
 ![Lighthouse report summary](https://keepinguptodate.com/pages/2021/08/lighthouse-report-summary.png)
+
+---
 
 ![Lighthouse-custom-section-results](https://keepinguptodate.com/pages/2021/08/lighthouse-custom-section-results.png)
