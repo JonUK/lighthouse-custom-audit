@@ -7,7 +7,7 @@ class NonInteractiveClickHandlersAudit extends Audit {
      * @return {LH.Audit.Meta}
      */
     return {
-      id: 'non-interactive-click-handlers-id',
+      id: 'non-interactive-click-handlers',
       title: 'Checks that click handlers on non-interactive elements are fully accessible',
       failureTitle: 'One or more non-interactive elements has a click which is not fully accessible',
       description:

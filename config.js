@@ -24,7 +24,7 @@ module.exports = {
       description: 'Custom audit for our checks on DOM element issues',
       auditRefs: [
         // "weight" controls how multiple audits are averaged together
-        { id: 'non-interactive-click-handlers-id', weight: 1 }
+        { id: 'non-interactive-click-handlers', weight: 1 }
       ]
     }
   }
